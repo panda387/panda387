@@ -1,0 +1,187 @@
+.background-section {
+  width: 25%;
+  min-height: 25vh;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#background-section {
+  width: 50%;
+  height: 25vh;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 20px auto;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: overlay;
+}
+#background-section h1,
+#background-section p {
+  position: relative;
+  z-index: 1;
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+}
+
+#image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+#image-container img {
+  object-fit: cover;
+  border-radius: 5px;
+}
+#image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.image-group {
+  margin: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+}
+
+/* 각 항목별 스타일 */
+.image-group:nth-child(1) {
+  background-color: #e8f5e9;
+  border: 2px solid #81c784;
+}
+
+.image-group:nth-child(2) {
+  background-color: #e3f2fd;
+  border: 2px solid #64b5f6;
+}
+
+.image-group:nth-child(3) {
+  background-color: #fce4ec;
+  border: 2px solid #f06292;
+}
+
+/* 프로젝트 섹션을 위한 스타일 추가 */
+.image-group:nth-child(4) {
+  background-color: rgba(111, 66, 193, 0.1); /* 연한 보라색 배경 */
+  border: 2px solid #6f42c1; /* 보라색 테두리 */
+}
+
+.image-group h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.image-group img {
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.job-title {
+  display: block;
+  font-size: 1.2em;
+  color: #333;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.job-title:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.05);
+  color: #007bff;
+}
+
+/* 프로젝트 링크 스타일 수정 */
+.project-title {
+  display: block;
+  font-size: 1.2em;
+  color: #333;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-title:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.05);
+  color: #6f42c1; /* 보라색 */
+}
+
+/* 프로젝트 섹션 전체 스타일 */
+.image-group:nth-child(4) {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: rgba(111, 66, 193, 0.1);
+  border: 2px solid #6f42c1;
+  border-radius: 8px;
+}
+
+/* 다크 모드 토글 버튼 스타일 */
+#darkModeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    background-color: #555;
+}
+
+/* 다크 모드 스타일 */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;  /* 기본 텍스트 색상을 흰색으로 */
+}
+
+.dark-mode #background-section h1,
+.dark-mode #background-section p {
+    color: #ffffff;  /* 배경 섹션의 텍스트를 흰색으로 */
+}
+
+.dark-mode .image-group {
+    background-color: #2d2d2d;
+    border-color: #404040;
+}
+
+.dark-mode .image-group h3 {
+    color: #ffffff;  /* 그룹 제목도 흰색으로 */
+}
+
+.dark-mode .project-title,
+.dark-mode .job-title {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+.dark-mode .project-title:hover {
+    background-color: rgba(111, 66, 193, 0.3);
+    color: #ffffff;  /* 호버 시에도 텍스트는 흰색 유지 */
+}
+
+.dark-mode .job-title:hover {
+    background-color: rgba(0, 123, 255, 0.3);
+    color: #ffffff;  /* 호버 시에도 텍스트는 흰색 유지 */
+}
