@@ -156,10 +156,6 @@
     color: #ffffff;  /* 기본 텍스트 색상을 흰색으로 */
 }
 
-.dark-mode #background-section h1,
-.dark-mode #background-section p {
-    color: #ffffff;  /* 배경 섹션의 텍스트를 흰색으로 */
-}
 
 .dark-mode .image-group {
     background-color: #2d2d2d;
